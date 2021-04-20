@@ -1,20 +1,219 @@
-*{
-
+/* O tamanho da tela limita-se à borda */
+* { 
+    box-sizing: border-box;
 }
 
-header{
+/* Variáveis globais */
+:root{
+    --colorBody: #3d3d3d;
+    --fontBody: 'Source Sans Pro', sans-serif;
+    --bgColor: #FFF;
+    --colorGrey: #3d3d3d;
+}
+
+/* Reset no corpo do site */
+body{    
+    margin: 0;
+    padding: 0;
+    color: var(--colorBody);
+    font-family: var(--fontBody);
+    background-color: var(--bgColor);
+}
+
+/* Definindo a largura máxima do container que fica dentro da header */
+.container{
+    max-width: 1024px;
+}
+
+.topo{
+    /* O header ficará fixo */
+    position: fixed;
+    /* Ocupará toda a largura da tela */
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.topo .container{
+    /* Aplicando na 1ª div dentro do header, o FlexBox */
+    display: flex;
+    /* Os itens serão centralizados no eixo transversal  */
+    align-items: center;
+    /* Alinha os itens no eixeo principal onde o 1º fica no início e o 2º no meio. */
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    /* Sem margem no topo e na base, margem automática nas lateras, fazendo com que fique centralizado. */
+    margin: 0 auto;
+}
+
+.titulo{
+    margin: 0 40px 0 0;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--colorGrey);
+}
+
+.link{
+    /* Todas as letras em caixa alta */
+    text-transform: uppercase;
+    line-height: 18px;
+    text-decoration: none;
+    padding: 0 15px 10px 15px;
+    color: var(--colorGrey);
+}
+
+.link:hover{
+    /* Add uma borda sólida de 3px na cor azul embaixo do elemento, ao passar o mouse em cima */
+    border-bottom: 3px solid #6592c9;
+}
+
+.titulo span{
+    color: #6592c9;
+}
+
+.titulo-site{
+    background-image: url('../img/img-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* 100% do da altura do viewport do site  */
+    height: 100vh;
+
+    /* Inseri o texto no meio da imagem de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-site-descricao{
+    /* Estilizar o texto que ficou no meio da imagem de fundo*/
+    color: #fff;
+    font-size: 28px;
+    background-color: #0a9077b3;
+    border: 1px solid;
+    padding: 0 20px;
+    border-radius: 4px;
     text-align: center;
-    width: 1024px;
-}
-main div{
-    background-image:'./assets/img/img-fundo.jpg';
 }
 
-main{
-
+.quartos{
+    /* Organizando as imagens da sessão que mostra os quartos */
+    display: flex;
+    justify-content: space-between;
 }
 
+.quarto{
+    /* Organizando os links da sessão dos quartos */
+    margin-right: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #00836a;
+    text-decoration: none;
+    color: var(--colorGrey);
+}
 
-footer{
+.quarto:last-child {
 
+    margin-right: 0px;
+}
+
+.limitar-container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.titulo-box {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.titulo-box h2{
+    /* Ajuste no h2 */
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+img {
+    /* Ajuste no tamanho da imagem dos quartos */
+    width: 100%;
+}
+
+.quarto p {
+    /* Ajuste no p */
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.descricoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.descricao {
+    display: flex;
+    width: 45%;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.descricao-img {
+    width: 100px;
+    height: 113px;
+    object-fit: cover;
+    margin-left:10px;
+}
+
+.rodape-copright {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #3b7863;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+  }
+
+.rodape {
+    background-color: #49997d;
+    color:#fff;
+}
+
+.rodape h4 {
+    font-size: 22px;
+}
+
+.rodape-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape-info {
+    width: 23%;
+    display: flex;
+    align-items: center;
+}
+.rodape-info p a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.rodape-link{
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.rodape-icone {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
