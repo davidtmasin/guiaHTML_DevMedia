@@ -6,138 +6,149 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/style/style.css">
         <link rel="shortcut icon" href="./assets/img/icones/favicon.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
         <title>Pousada Secreta</title>
     </head>
     <body>
-        <header>
-            <div>
+        <header class="topo">
+            <div class="limitar-container container">
                 <a href="#">Pousada <span>Secreta</span></a>
                 <div>            
-                    <a href="#sobre">Sobre</a>
-                    <a href="#rota">Rota</a>
-                    <a href="./pages/quartos.html">Quartos</a>
+                    <a class="link" href="#sobre">Sobre</a>
+                    <a class="link" href="#rota">Rota</a>
+                    <a class="link" href="./pages/quartos.html">Quartos</a>
                 </div>
             </div>
             
         </header>
         
         <main>
-
-            <div>
-                <h1>Pousada Secreta</h1>
-                <p>A pousada reservada de [...]</p>
+            <div class="titulo-site">
+                <div class="titulo-site-descricao">
+                    <h1>Pousada Secreta</h1>
+                    <p>A pousada reservada de [...]</p>
+                </div>
             </div>
 
-            <div>
-                <h1>SEJA BEM-VINDO(A)!</h1>
+            <div class="limitar-container titulo-box">
+
+                <h2>Seja bem-vindo(a)!</h2>
+
                 <p>Relaxe em nossas acomodações e curta o melhor de [...]</p>
+
                 <p>Temos quatos para solteiro, casal ou família.</p>
+
             </div>
 
-            <div id="quarto">
+            <div class="quartos limitar-container">
                 <a href="./pages/quartos.html/#solteiro">
-                    <img src="./assets/img/quarto-solteiro1.jpg" alt="QUARTO DE SOLTEIRO" title="QUARTO DE SOLTEIRO">
+                    <img src="./assets/img/quarto-solteiro1.jpg" alt="Quarto de solteiro" title="Quarto de solteiro">
                     <p>Quarto de Solteiro</p>
                 </a>
                 
                 <a href="./pages/quartos.html/#casal">
-                    <img src="./assets/img/quarto-casal1.jpg" alt="QUARTO DE CASAL" title="QUARTO DE CASAL">
+                    <img src="./assets/img/quarto-casal1.jpg" alt="Quarto de casal" title="Quarto de casal">
                     <p>Quarto de Casal</p>
                 </a>
                 
                 <a href="./pages/quartos.html/#familia">
-                    <img src="./assets/img/quarto-familia1.jpg" alt="QUARTO FAMÍLIA" title="QUARTO FAMÍLIA">
+                    <img src="./assets/img/quarto-familia1.jpg" alt="Quarto família" title="Quarto família">
                     <p>Quarto Família</p>
                 </a>
             </div>
 
-            <div id="rota">
-                <h1>ROTA</h1>
+            <div id="rota" class="limitar-container titulo-box">
+                <h2>Rota</h2>
+
                 <p>Veja como chegar até a pousada.</p>
+
             </div>
 
-            <div id="gMaps">
+            <div class="container-rota">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7957.632208381184!2d-38.966209!3d-4.255994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4daf90be2261f2a8!2sPousada%20Caf%C3%A9%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1618766155004!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen></iframe>
             </div>
 
-            <div id="sobre">
-                <h1>SOBRE A POUSADA!</h1>
+            <div id="sobre" class="limitar-container titulo-box container-descricao">
+                <h2>SOBRE A POUSADA!</h2>
+
                 <p>Conheça um pouco sobre a nossa pousada.</p>
+        
             </div>
 
-            <div id="sobreMaisInfo">
-                <div>
-                    <div>
-                        <h1>A pousada</h1>
+            <div class="limitar-container descricoes">
+                <div class="descricao">
+                  <div class="descricao-conteudo">
+                        <h3>A pousada</h3>
+
                         <p>A Pousada Secreta dispõe de estacionamento privativo gratuito, piscina ao ar livre e bar.</p>
                     </div>
 
-                        <img src="./assets/img/img1.jpg" alt="Faixada" title="Faixada">
+                        <img src="./assets/img/img1.jpg" alt="Faixada" title="Faixada"/>
                     </div>
 
                 <div>
                     <div>
-                        <h1>Nosso quartos</h1>
+                        <h3>Nosso quartos</h3
+                            >
                         <p>Os quartos possuem TV de tela plana a cabo, cozinha compacta e área para refeição. Além disso, as unidades da Pousada Secreta contém ar-condicionado.</p>
                     </div>
 
-                    <img src="./assets/img/img2.jpg" alt="Quartos" title="Quartos">
+                    <img src="./assets/img/img2.jpg" alt="Quartos" title="Quartos"/>
                 </div>
 
                 <div>
                     <div>
-                        <h1>Alimentação</h1>
+                        <h3>Alimentação</h3>
+
                         <p>A pousada serve café da manhã em estilo continental ou buffet. Nossos restaurantes funcionam 24hrs.</p>
                     </div>
                     
-                    <img src="./assets/img/img3.jpg" alt="Restaurante" title="Restaurante">
+                    <img src="./assets/img/img3.jpg" alt="Restaurante" title="Restaurante"/>
                 </div>
 
                 <div>
                     <div>
-                        <h1>Recepção</h1>
+                        <h3>Recepção</h3>
+
                         <p>Nossa recepção fica aberta 24hrs.</p>
                     </div>
                     
-                    <img src="./assets/img/img5.jpg" alt="">
+                    <img src="./assets/img/img5.jpg" alt="Recepção" title="Recepção"/>
                 </div>
             </div>
-
         </main>
         
-        <footer id="containerLimite">
-                    
-                <div id="dadosContato">
-                    <div>
-                        <h4>Entre em contato conosco:</h4>
-                    </div>
+        <footer class="rodape">                
+            <div class="limitar-container rodape-container">
+                <div class="rodape-info">
+                    <h4>Entre em contato conosco:</h4>
+                </div>
 
-                    <a href="https://bityli.com/0Z4mB" target="_blank">
-                        <img src="./assets/img/icones/endereco.png" alt="ícone endereço">
+                <a class="rodape-info rodape-link" href="https://bityli.com/0Z4mB" target="_blank">
+                    <img class="rodape-icone" src="./assets/img/icones/endereco.png" alt="Ícone endereco" title="Ícone endereco"/>
 
-                        <p>Endereço: Estrada do Abreu, s/n Sitio Bom Retiro Zona Rural, Guaramiranga - CE, 62766-000</p>
-                    </a>                
+                    <p>Endereço: Estrada do Abreu, s/n Sitio Bom Retiro Zona Rural, Guaramiranga - CE, 62766-000</p>
+                </a>                
 
 
-                    <div>
-                        <img src="./assets/img/icones/telefone.png" alt="ícone telefone">
+                <div class="rodape-info">
+                    <img class="rodape-icone" src="./assets/img/icones/telefone.png" alt="Ícone telefone" title="Ícone telefone"/>
 
-                        <p>Cel: <a href="tel:+5585988791615" target="_blank">85 9 8879-1615</a></p>
+                    <p>Cel: <a href="tel:+5585988791615" target="_blank">85 9 8879-1615</a></p>
 
-                    </div>
+                </div>
 
-                    <a href="https://www.booking.com" target="_blank">
-                        <img src="./assets/img/icones/calendario.png" alt="ícone calendário">
+                <a lass="rodape-info rodape-link" href="https://www.booking.com" target="_blank">
+                    <img class="rodape-icone" src="./assets/img/icones/calendario.png" alt="Ícone calendario" title="Ícone calendario"/>
 
-                        <p>Faça sua reserva pelo Booking.com</p>
-                    </a>               
+                    <p>Faça sua reserva pelo Booking.com</p>
+                </a>               
                 
 
-                    <div id="Copyright">
+                <div id="rodape-copyright">
                         <p>© Copyright - Pousada Secreta</p>
-                    </div>
-
-                </div>   
-            </footer>
+                </div>
+            </div>   
+        </footer>
     </body>
 </html>
