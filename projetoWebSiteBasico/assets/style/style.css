@@ -1,7 +1,18 @@
 /* O tamanho da tela limita-se à borda */
 * { 
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #000;
+};
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #373737;
+};
 
 /* Variáveis globais */
 :root{
@@ -19,6 +30,7 @@ body{
     font-family: var(--fontBody);
     background-color: var(--bgColor);
 }
+
 
 /* Definindo a largura máxima do container que fica dentro da header */
 .container{
@@ -172,15 +184,6 @@ img {
     margin-left:10px;
 }
 
-.rodape-copright {
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #3b7863;
-    color: #fff;
-    font-weight: 600;
-    width: 100%;
-  }
-
 .rodape {
     background-color: #49997d;
     color:#fff;
@@ -204,6 +207,7 @@ img {
 .rodape-info p a {
     text-decoration: none;
     color:#fff;
+    
 }
 
 .rodape-link{
@@ -217,3 +221,12 @@ img {
     height: 40px;
     margin-right: 10px;
 }
+
+.rodape-copyright {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #3b7863;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+  }

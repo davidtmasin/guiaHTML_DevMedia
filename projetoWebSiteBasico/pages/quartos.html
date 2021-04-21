@@ -4,55 +4,152 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/style/style.css">
-        <link rel="shortcut icon" href="./assets/img/icones/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../assets/style/style.css">
+        <link rel="stylesheet" href="../assets/style/style-quartos.css">
+        <link rel="shortcut icon" href="../assets/img/icones/favicon.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
         <title>Pousada Secreta</title>
     </head>
 <body>
-    <header>
-        <a href="index.html">Pousada Secreta</a>
-        <a href="index.html/#sobre">Sobre</a>
-        <a href="index.html/#rotas">Rotas</a>
-        <a href="quartos.html">Quartos</a>
+    <header class="topo">
+        <div class="limitar-container container">
+            <a href="./../index.html" class="titulo">Pousada <span>Secreta</span></a>
+            <div>   
+                <a class="link" href="./../index.html#sobre">Sobre</a>
+                <a class="link" href="./../index.html#rota">Rota</a>
+                <a class="link" href="#">Quartos</a>
+            </div>
+        </div>
     </header>
         
     <main>        
-
+        <div>
+            <div class="titulo-site titulo-galeria"></div>
+        
+            <div id="solteiro" class="limitar-container titulo-box">
+              <h2>
+                Quartos de solteiro
+              </h2>
+        
+              <p>
+                Conheça os nossos quartos de solteiro.
+              </p>
+            </div>
+        
+            <div class="quartos limitar-container quartos-galeria">
+              <img class="quartos-img" src="../assets/img/quarto-solteiro1.jpg" alt="Quarto de solteiro 1" title="Quarto de solteiro 1">
+              <img  class="quartos-img" src="../assets/img/quarto-solteiro2.jpg" alt="Quarto de solteiro 2" title="Quarto de solteiro 2">
+              <img  class="quartos-img" src="../assets/img/quarto-solteiro3.jpg" alt="Quarto de solteiro 3" title="Quarto de solteiro 3">
+            </div>
+        
+            <div class="limitar-container titulo-box">
+              <h3>Informações sobre o quarto:</h3>
+        
+              <ul class="quarto-informacoes">
+                <li>TV de tela plana a cabo.</li>
+                <li>Cozinha compacta.</li>
+                <li>Área para refeições.</li>
+                <li>Ar-condicionado.</li>
+                <li>1 ou 2 camas de solteiro.</li>
+                <li>Não permite cancelamento.</li>
+              </ul>
+            </div>
+        
+        
+            <div id="casal" class="limitar-container titulo-box">
+              <h2>
+                Quarto de casal
+              </h2>
+        
+              <p>
+                Conheça nossos quartos de casal.
+              </p>
+            </div>
+        
+            <div class="quartos limitar-container">
+              <img class="quartos-img" src="../assets/img/quarto-casal1.jpg" alt="Quarto de casal 1" title="Quarto de casal 1">
+              <img class="quartos-img" src="../assets/img/quarto-casal2.jpg" alt="Quarto de casal 2" title="Quarto de casal 2">
+              <img class="quartos-img" src="../assets/img/quarto-casal3.jpg" alt="Quarto de casal 3" title="Quarto de casal 3">
+            </div>
+        
+            <div class="limitar-container titulo-box">
+              <h3>Informações sobre o quarto:</h3>
+        
+              <ul class="quarto-informacoes">
+                <li>TV de tela plana a cabo.</li>
+                <li>Cozinha compacta.</li>
+                <li>Área para refeições.</li>
+                <li>Ar-condicionado.</li>
+                <li>1 cama de casal.</li>
+                <li>Cancelamento grátis.</li>
+              </ul>
+            </div>
+        
+            <div id="familia" class="limitar-container titulo-box">
+              <h2>
+                Quarto família 
+              </h2>
+        
+              <p>
+                Conheça nossos quartos família.
+              </p>
+            </div>
+        
+            <div class="quartos limitar-container">
+              <img class="quartos-img" src="../assets/img/quarto-familia1.jpg" alt="Quarto família 1" title="Quarto família 1">
+              <img class="quartos-img" src="../assets/img/quarto-familia2.jpg" alt="Quarto família 2" title="Quarto família 2">
+              <img class="quartos-img" src="../assets/img/quarto-familia3.jpg" alt="Quarto família 3" title="Quarto família 3">
+            </div>
+        
+            <div class="limitar-container titulo-box">
+              <h3>Informações sobre o quarto:</h3>
+        
+              <ul class="quarto-informacoes">
+                <li>TV de tela plana a cabo.</li>
+                <li>Cozinha compacta.</li>
+                <li>Área para refeições.</li>
+                <li>Ar-condicionado.</li>
+                <li>1 cama de casal e 1 de solteiro.</li>
+                <li>Cancelamento grátis.</li>
+              </ul>
+            </div>
+        
+          </div>
     </main>
 
-    <footer id="containerLimite">
-                
-            <div id="dadosContato">
-                <div>
-                    <h4>Entre em contato conosco:</h4>
-                </div>
+    <footer class="rodape">                
+        <div class="limitar-container rodape-container">
+            <div class="rodape-info">
+                <h4>Entre em contato conosco:</h4>
+            </div>
 
-                <a href="https://bityli.com/0Z4mB" target="_blank">
-                    <img src="./assets/img/icones/endereco.png" alt="ícone endereço">
+            <a class="rodape-info rodape-link" href="https://bityli.com/0Z4mB" target="_blank">
+                <img class="rodape-icone" src="../assets/img/icones/endereco.png" alt="Ícone endereco" title="Ícone endereco"/>
 
-                    <p>Endereço: Estrada do Abreu, s/n Sitio Bom Retiro Zona Rural, Guaramiranga - CE, 62766-000</p>
-                </a>                
+                <p>Endereço: Estrada do Abreu, s/n Sitio Bom Retiro Zona Rural, Guaramiranga - CE, 62766-000</p>
+            </a>                
 
 
-                <div>
-                    <img src="./assets/img/icones/telefone.png" alt="ícone telefone">
+            <div class="rodape-info">
 
-                    <p>Cel: <a href="tel:+5585988791615" target="_blank">85 9 8879-1615</a></p>
+                <img class="rodape-icone" src="../assets/img/icones/telefone.png" alt="Ícone telefone" title="Ícone telefone"/>
 
-                </div>
+                <p>Cel: <a href="tel:+5585988791615" target="_blank"><strong>85 9 8879-1615</strong></a></p>
 
-                <a href="https://www.booking.com" target="_blank">
-                    <img src="./assets/img/icones/calendario.png" alt="ícone calendário">
+            </div>
 
-                    <p>Faça sua reserva pelo Booking.com</p>
-                </a>               
+            <a class="rodape-info rodape-link" href="https://www.booking.com" target="_blank">
+                <img class="rodape-icone" src="../assets/img/icones/calendario.png" alt="Ícone calendario" title="Ícone calendario"/>
+
+                <p>Faça sua reserva pelo <strong>Booking.com</strong></p>
+            </a>               
             
 
-                <div id="Copyright">
+            <div class="rodape-copyright">
                     <p>© Copyright - Pousada Secreta</p>
-                </div>
-
-            </div>   
+            </div>
+        </div>   
     </footer>
 </body>
 </html>
